@@ -162,7 +162,7 @@ body {
   font-size: 40rem;
   text-transform: uppercase;
   letter-spacing: 1rem;
-  background-image: url(/img/mercedes-benz-cls-350-amg-line-2021-blue-background-4000x3720-5201.jpg);
+  background-image: url(../img/mercedes-benz-cls-350-amg-line-2021-blue-background-4000x3720-5201.jpg);
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
@@ -207,7 +207,7 @@ body {
   letter-spacing: 1.5rem;
   font-weight: 500;
   text-transform: uppercase;
-  background-image: url(/img/e-class.jpg);
+  background-image: url(../img/e-class.jpg);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -552,21 +552,21 @@ body {
     top: 40%;
     animation: card-text .85s; }
   .lease-picture {
-    background-image: url(/img/wallpaperflare.com_wallpaper.jpg);
+    background-image: url(../img/wallpaperflare.com_wallpaper.jpg);
     background-size: cover;
     background-position: center;
     flex: 0 0 70%;
     position: relative;
     transition: all .2s; }
     .lease-picture-2 {
-      background-image: url(/img/brabus-600-mercedes-benz-s-class-black-cars-2022-5k-6000x4000-8730.jpeg);
+      background-image: url(../img/brabus-600-mercedes-benz-s-class-black-cars-2022-5k-6000x4000-8730.jpeg);
       background-size: cover;
       background-position: center;
       flex: 0 0 70%;
       position: relative;
       transition: all .2s; }
     .lease-picture-3 {
-      background-image: url(/img/mercedes-benz-cls-350-amg-line-2021-blue-background-4000x3720-5201.jpg);
+      background-image: url(../img/mercedes-benz-cls-350-amg-line-2021-blue-background-4000x3720-5201.jpg);
       background-size: cover;
       background-position: center;
       flex: 0 0 70%;
@@ -1204,7 +1204,7 @@ body {
   .models-car {
     display: none;
     flex: 1;
-    background-image: url(/img/brabus-600-mercedes-benz-s-class-black-cars-2022-5k-6000x4000-8730.jpeg);
+    background-image: url(../img/brabus-600-mercedes-benz-s-class-black-cars-2022-5k-6000x4000-8730.jpeg);
     background-size: cover;
     background-position: center; }
   .models-text {
