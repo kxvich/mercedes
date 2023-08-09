@@ -1,0 +1,1216 @@
+@keyframes moveup {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem); }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes movedown {
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem); }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveinright {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(1.2); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    transform: scale(1.05); }
+  100% {
+    opacity: 0;
+    display: none; } }
+
+@keyframes gone {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+    color: black; }
+  70% {
+    opacity: 0;
+    transform: scale(1.1); }
+  80% {
+    opacity: 0;
+    letter-spacing: 1.3rem; }
+  100% {
+    opacity: 0; } }
+
+@keyframes card-text {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem) translateX(-50%); }
+  100% {
+    transform: translateY(0) translateX(-50%);
+    opacity: 1; } }
+
+:root {
+  --color-white: #fff; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  -webkit-scroll-behavior: smooth;
+  scroll-behavior: smooth; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 26.8em) {
+    html {
+      font-size: 43.75%; } }
+  @media only screen and (max-width: 23.4em) {
+    html {
+      font-size: 37.5%; } }
+  @media only screen and (max-width: 20em) {
+    html {
+      font-size: 31.25%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  font-family: 'Rajdhani', sans-serif; }
+
+.heading-primary {
+  font-size: 7rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 4.5rem;
+  animation: moveup 1s,gone 7s 45s;
+  transition: all .2s;
+  display: block; }
+
+.heading-secondary {
+  color: #fff;
+  font-size: 4rem;
+  font-family: 'bitter', sans-serif;
+  font-weight: 400; }
+  .heading-secondary-main {
+    text-transform: capitalize; }
+  .heading-secondary-sub {
+    text-transform: uppercase; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 2rem; } }
+
+.heading-tertiary {
+  font-size: 3rem;
+  font-family: 'bitter' ,sans-serif;
+  text-transform: capitalize;
+  font-weight: 400; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-tertiary {
+      font-size: 2rem;
+      margin-bottom: 1rem; } }
+
+.paragraph {
+  font-size: 1.7rem;
+  color: #fff;
+  font-weight: 500; }
+  @media only screen and (max-width: 26.8em) {
+    .paragraph {
+      margin-bottom: 0; } }
+
+.ring-championship {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Rajdhani', sans-serif;
+  text-align: center; }
+
+.ring {
+  display: inline-block;
+  font-size: 40rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  background-image: url(/img/mercedes-benz-cls-350-amg-line-2021-blue-background-4000x3720-5201.jpg);
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 500; }
+  @media only screen and (max-width: 75em) {
+    .ring {
+      font-size: 30rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .ring {
+      font-size: 20rem; } }
+  @media only screen and (max-width: 26.8em) {
+    .ring {
+      font-size: 15rem; } }
+
+.championship {
+  font-size: 15rem;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 75em) {
+    .championship {
+      font-size: 12rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .championship {
+      font-size: 9rem; } }
+  @media only screen and (max-width: 26.8em) {
+    .championship {
+      font-size: 7rem; } }
+
+.smnr-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.smnr {
+  font-size: 45rem;
+  letter-spacing: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-image: url(/img/e-class.jpg);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-position: top; }
+  @media only screen and (max-width: 75em) {
+    .smnr {
+      font-size: 30rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .smnr {
+      font-size: 20rem; } }
+
+.project {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20rem;
+  letter-spacing: 1.5rem;
+  color: gray; }
+  @media only screen and (max-width: 75em) {
+    .project {
+      font-size: 15rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .project {
+      font-size: 10rem; } }
+
+.amg {
+  position: absolute;
+  top: 10%;
+  left: 30rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  line-height: 1.3; }
+  .amg-text {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400; }
+  .amg-63 {
+    display: block;
+    font-size: 2.5rem; }
+
+.s-class-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 60;
+  text-align: center; }
+
+.s-class {
+  animation: moveinleft 1s;
+  text-transform: uppercase;
+  font-size: 4rem;
+  transition: all .2s;
+  margin-bottom: 2rem; }
+  .s-class-main {
+    display: block;
+    font-size: 6rem;
+    text-transform: uppercase; }
+  .s-class-sub {
+    display: block;
+    font-size: 2.5rem; }
+
+.discover-eq {
+  position: absolute;
+  top: 5rem;
+  left: 5rem; }
+  .discover-eq-text {
+    font-size: 6rem;
+    width: 65%; }
+
+.follow {
+  font-size: 5rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-bottom: 5rem; }
+  @media only screen and (max-width: 75em) {
+    .follow {
+      font-size: 4rem; } }
+
+.u-margin-bottom-sm {
+  margin-bottom: .5rem; }
+
+.u-margin-bottom-sm-2 {
+  margin-bottom: 2.5rem; }
+
+.u-margin-bottom-md {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-lg {
+  margin-bottom: 20rem; }
+
+.width {
+  width: 80%; }
+
+.width-sm {
+  width: 65%; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+@media (min-aspect-ratio) {
+  .bg-video {
+    width: 100%;
+    height: auto; } }
+
+@media (max-aspect-ratio) {
+  .bg-video {
+    width: 100%;
+    height: auto; } }
+
+.btn, .btn:link, .btn:visited {
+  position: relative;
+  text-decoration: none;
+  background-color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1rem 6rem;
+  border-radius: 10rem;
+  color: #111;
+  animation: moveup 1s .3s;
+  animation-fill-mode: backwards;
+  display: inline-block;
+  font-weight: 500; }
+  .btn:hover, .btn:link:hover, .btn:visited:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #fff; }
+
+.btn-arrow {
+  display: none;
+  transition: all .4s ease-out; }
+
+.btn-arrow-down {
+  display: none; }
+
+.btn-text {
+  font-weight: 500;
+  transition: all .4s; }
+
+.btn:hover .btn-text {
+  margin-right: 1rem; }
+
+.btn:hover .btn-arrow {
+  display: inline; }
+
+.btn-2, .btn-2:link, .btn-2:visited {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem 2rem;
+  background-color: black;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  transition: all .2s;
+  display: inline-block;
+  font-weight: bold; }
+
+.btn-2:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25); }
+
+.btn-2:active {
+  transform: translateY(1px); }
+
+.btn-2-text {
+  transition: all .4s; }
+
+.btn-2-arrow {
+  display: none;
+  transition: all .4s ease-out; }
+
+.btn-2:hover .btn-2-text {
+  margin-right: 1rem; }
+
+.btn-2:hover .btn-2-arrow {
+  display: inline; }
+
+.btn-2-white, .btn-2-white:link, .btn-2-white:visited {
+  text-decoration: none;
+  color: #000;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  transition: all .2s;
+  display: inline-block;
+  font-weight: bold;
+  background-size: 220%; }
+  @media only screen and (max-width: 56.25em) {
+    .btn-2-white, .btn-2-white:link, .btn-2-white:visited {
+      margin-bottom: 10rem; } }
+  @media only screen and (max-width: 26.8em) {
+    .btn-2-white, .btn-2-white:link, .btn-2-white:visited {
+      font-size: 1.2rem; } }
+
+.btn-2-white:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, black 50%);
+  background-position: 100%;
+  border: 1px solid #fff;
+  color: white; }
+
+.btn-2-white:active {
+  transform: translateY(1px); }
+
+.models__btn {
+  text-decoration: none;
+  color: black;
+  background-color: #fff;
+  padding: 1rem 4rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  border-radius: 10rem;
+  font-weight: 500;
+  display: none;
+  animation: moveinright 1s;
+  transition: all .2s; }
+  .models__btn:hover {
+    background-color: transparent;
+    color: #FFF;
+    border: 1px solid #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+    padding: 1rem 6rem; }
+
+.eq-button-1:link, .eq-button-1:visited {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 5rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all .3s;
+  position: absolute;
+  bottom: 10rem;
+  left: 6%;
+  z-index: 10; }
+
+.eq-button-1:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold; }
+
+.eq-button-1:hover ~ .eq-background {
+  opacity: 1; }
+
+.eq-button-1-text {
+  margin-right: 26rem; }
+
+.eq-button-2:link, .eq-button-2:visited {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 5rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all .3s;
+  position: absolute;
+  bottom: 10rem;
+  left: 49%;
+  transform: translateX(-50%);
+  z-index: 10; }
+
+.eq-button-2:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold; }
+
+.eq-button-2:hover ~ .eq-background-2 {
+  opacity: 1; }
+
+.eq-button-2-text {
+  margin-right: 26rem; }
+
+.eq-button-3:link, .eq-button-3:visited {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 5rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all .3s;
+  position: absolute;
+  bottom: 10rem;
+  right: 6%;
+  z-index: 10; }
+
+.eq-button-3:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold; }
+
+.eq-button-3:hover ~ .eq-background-3 {
+  opacity: 1; }
+
+.eq-button-3-text {
+  margin-right: 26rem; }
+
+.lease {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .lease-box {
+    height: 50rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    transition: all .2s; }
+    .lease-box:not(:last-child) {
+      margin-right: 1.5rem; }
+  .lease-box:hover {
+    transform: translateY(-2rem) scale(1.02);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25); }
+  .lease-box:active {
+    transform: translateY(1px) scale(1); }
+  .lease-box:hover .lease-picture {
+    transform: scale(1.02); }
+  .lease-box:hover .lease-picture__transparent {
+    opacity: 1; }
+  .lease-box:hover .lease-picture__text {
+    opacity: 1;
+    top: 40%;
+    animation: card-text .85s; }
+  .lease-picture {
+    background-image: url(/img/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    flex: 0 0 70%;
+    position: relative;
+    transition: all .2s; }
+    .lease-picture-2 {
+      background-image: url(/img/brabus-600-mercedes-benz-s-class-black-cars-2022-5k-6000x4000-8730.jpeg);
+      background-size: cover;
+      background-position: center;
+      flex: 0 0 70%;
+      position: relative;
+      transition: all .2s; }
+    .lease-picture-3 {
+      background-image: url(/img/mercedes-benz-cls-350-amg-line-2021-blue-background-4000x3720-5201.jpg);
+      background-size: cover;
+      background-position: center;
+      flex: 0 0 70%;
+      position: relative;
+      transition: all .2s; }
+    .lease-picture__transparent {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: all .2s; }
+    .lease-picture__text {
+      color: #fff;
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all .2s;
+      font-size: 5rem;
+      opacity: 0; }
+  .lease-details {
+    flex: 1;
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem; }
+  .lease-price {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    border-right: 1px solid #777;
+    padding-right: 2rem;
+    margin-right: 2rem; }
+    .lease-price__value {
+      font-size: 5rem; }
+    .lease-price__currency {
+      position: absolute;
+      top: .5rem;
+      left: -1rem;
+      font-size: 2rem; }
+    .lease-price__mo {
+      font-size: 1.5rem;
+      font-weight: bold; }
+  .lease-duration {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-right: 1px solid #777;
+    padding-right: 2rem;
+    padding-left: -2rem;
+    margin-right: 2rem; }
+    .lease-duration__figure {
+      font-size: 5rem; }
+    .lease-duration__mos {
+      font-size: 1.5rem;
+      font-weight: bold; }
+  .lease-due {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative; }
+
+.offers {
+  position: absolute;
+  bottom: 3%; }
+
+.header {
+  height: 100vh;
+  position: relative; }
+  .header-transparent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 100%; }
+  .header-nav__checkbox {
+    display: none;
+    z-index: 30;
+    position: absolute;
+    top: 0; }
+  .header-nav__button {
+    color: white;
+    position: absolute;
+    top: 5rem;
+    left: 3.5rem;
+    z-index: 30;
+    animation: appear 1s; }
+    .header-nav__button:hover {
+      color: #ccc; }
+  .header-nav__icon {
+    position: relative;
+    margin-top: 1.5rem; }
+    .header-nav__icon, .header-nav__icon::before, .header-nav__icon::after {
+      width: 2rem;
+      height: 2px;
+      background-image: linear-gradient(120deg, white, transparent);
+      display: inline-block;
+      margin-right: 1rem; }
+    .header-nav__icon::before, .header-nav__icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s; }
+    .header-nav__icon::before {
+      top: -.8rem; }
+    .header-nav__icon::after {
+      top: .8rem; }
+  .header-nav__button:hover .header-nav__icon::before {
+    top: -1rem; }
+  .header-nav__button:hover .header-nav__icon::after {
+    top: 1rem; }
+  .header-nav__img {
+    width: 8rem;
+    height: auto;
+    position: absolute;
+    top: 3.5rem;
+    left: 50%;
+    transform: translateX(-50%); }
+  .header-nav__menu {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: .8rem;
+    letter-spacing: 1.5px;
+    transition: all .2s; }
+  .header-nav__checkbox:checked ~ .side-nav {
+    width: 42%;
+    opacity: 1;
+    animation: moveinleft .75s;
+    display: block; }
+  .header-nav__checkbox:checked ~ .text-box {
+    display: none; }
+  .header-nav__checkbox:checked + .header-nav__button .header-nav__icon {
+    background-image: linear-gradient(to right, transparent, transparent); }
+  .header-nav__checkbox:checked + .header-nav__button .header-nav__icon::before {
+    transform: rotate(-135deg);
+    top: 0;
+    background-color: white; }
+  .header-nav__checkbox:checked + .header-nav__button .header-nav__icon::after {
+    transform: rotate(135deg);
+    top: 0;
+    background-color: white; }
+  .header-nav__checkbox:checked + .header-nav__button .header-nav__menu {
+    display: none; }
+  .header-nav__checkbox:checked + .header-nav__button:hover .header-nav__icon::before {
+    background-color: #777; }
+  .header-nav__checkbox:checked + .header-nav__button:hover .header-nav__icon::after {
+    background-color: #777; }
+  .header-dealer {
+    cursor: pointer;
+    position: absolute;
+    top: 5rem;
+    right: 3.5rem;
+    animation: appear 1s; }
+    .header-dealer__link {
+      text-decoration: none;
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      color: var(--color-white);
+      letter-spacing: 1.2px;
+      display: flex;
+      align-items: center;
+      transition: all .4s; }
+      @media only screen and (max-width: 26.8em) {
+        .header-dealer__link {
+          display: none; } }
+      .header-dealer__link:hover {
+        color: #ccc; }
+    .header-dealer__icon {
+      width: 1.7rem;
+      height: 1.7rem;
+      fill: currentColor;
+      margin-right: .5rem;
+      transition: all .4s; }
+    .header-dealer:hover .header-dealer__icon {
+      margin-right: 1rem; }
+  .header .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center; }
+  .header .side-nav {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    padding-top: 12rem;
+    padding-right: 10rem;
+    display: none; }
+    .header .side-nav__list {
+      list-style: none;
+      text-align: right; }
+    .header .side-nav__item {
+      animation: moveinleft 1s; }
+      .header .side-nav__item-1 {
+        animation: moveinleft 1s .7s;
+        animation-fill-mode: backwards; }
+      .header .side-nav__item-2 {
+        animation: moveinleft 1s .6s;
+        animation-fill-mode: backwards; }
+      .header .side-nav__item-3 {
+        animation: moveinleft 1s .5s;
+        animation-fill-mode: backwards; }
+      .header .side-nav__item-4 {
+        animation: moveinleft 1s .4s;
+        animation-fill-mode: backwards; }
+      .header .side-nav__item-5 {
+        animation: moveinleft 1s .3s;
+        animation-fill-mode: backwards; }
+      .header .side-nav__item-6 {
+        animation: moveinleft 1s .2s;
+        animation-fill-mode: backwards; }
+      .header .side-nav__item-7 {
+        animation: moveinleft 1s;
+        animation-fill-mode: backwards; }
+      .header .side-nav__item:not(:last-child) {
+        margin-bottom: 1rem; }
+    .header .side-nav__link:link, .header .side-nav__link:visited {
+      text-decoration: none;
+      color: #777;
+      font-size: 2.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.7px;
+      display: inline-block;
+      padding: 1rem 2rem;
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+      background-size: 227%;
+      transition: all .4s; }
+    .header .side-nav__link:hover {
+      background-position: 100%;
+      transform: translateX(1rem);
+      color: black; }
+    .header .side-nav__link-1 {
+      animation: moveinleft 1s .7s;
+      animation-fill-mode: backwards; }
+
+.section-ring {
+  height: 100vh;
+  position: relative;
+  background-color: black; }
+
+.section-ring-content {
+  padding: 20rem 12rem;
+  color: #fff;
+  background-color: #000; }
+  @media only screen and (max-width: 37.5em) {
+    .section-ring-content {
+      padding: 20rem 10rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .section-ring-content {
+      padding: 20rem 10rem; } }
+  @media only screen and (max-width: 26.8em) {
+    .section-ring-content {
+      padding: 15rem 5rem; } }
+
+.section-smnr {
+  padding-top: 60rem;
+  padding-bottom: 60rem;
+  background-color: black;
+  position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .section-smnr {
+      padding-top: 40rem;
+      padding-bottom: 40rem; } }
+
+.section-smnr-bg {
+  height: 100vh;
+  background-image: url(/img/smnr-large.jpg);
+  background-size: cover;
+  background-position: center; }
+  @media only screen and (max-width: 37.5em) {
+    .section-smnr-bg {
+      height: 100vh;
+      width: 100%; } }
+  @media only screen and (max-width: 56.25em) {
+    .section-smnr-bg {
+      height: 100vh;
+      width: 100%; } }
+
+.section-smnr-content {
+  padding: 10rem;
+  background-color: black; }
+
+.section-eqs {
+  height: 100vh;
+  background-image: url(/img/benz-eq1.jpg);
+  background-size: cover;
+  background-position: bottom;
+  color: #FFF;
+  position: relative; }
+  @media only screen and (max-width: 75em) {
+    .section-eqs {
+      display: none; } }
+
+.section-follow {
+  padding: 12rem 35rem;
+  text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .section-follow {
+      padding: 12rem 15rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .section-follow {
+      padding: 12rem 15rem; } }
+
+.footer {
+  background-color: black;
+  padding: 20rem 10rem; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      padding: 10rem 10rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding: 10rem 10rem; } }
+  .footer-content {
+    display: flex;
+    align-items: center; }
+    .footer-content__1 {
+      display: flex;
+      flex-direction: column;
+      margin-right: 10rem; }
+      .footer-content__1-link {
+        color: #777;
+        font-size: 5rem;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-weight: 500;
+        transition: all .4s; }
+        @media only screen and (max-width: 37.5em) {
+          .footer-content__1-link {
+            font-size: 4rem; } }
+        @media only screen and (max-width: 56.25em) {
+          .footer-content__1-link {
+            font-size: 4rem; } }
+        .footer-content__1-link:not(:last-child) {
+          margin-bottom: .7rem; }
+        .footer-content__1-link:hover {
+          color: #fff; }
+      .footer-content__1-purchase {
+        color: #fff; }
+    .footer-content__2 {
+      display: flex;
+      flex-direction: column; }
+      .footer-content__2-link {
+        color: #777;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-weight: 400;
+        transition: all .4s; }
+        @media only screen and (max-width: 37.5em) {
+          .footer-content__2-link {
+            font-size: 1.5rem; } }
+        @media only screen and (max-width: 56.25em) {
+          .footer-content__2-link {
+            font-size: 1.5rem; } }
+        .footer-content__2-link:not(:last-child) {
+          margin-bottom: .7rem; }
+        .footer-content__2-link:hover {
+          color: #fff; }
+
+.section-lease {
+  padding: 10rem 5rem;
+  background-image: linear-gradient(105deg, white 0%, white 50%, black 50%);
+  position: relative; }
+
+.section-amg {
+  height: 100vh;
+  background-image: url(/img/mercedes-benz-amg-g-5120x3496-11944.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative; }
+  .section-amg .amg-img {
+    width: 30rem;
+    height: auto;
+    position: absolute;
+    top: 2rem;
+    left: 3rem; }
+  .section-amg .amg-discover {
+    text-decoration: none;
+    position: absolute;
+    top: 15rem;
+    left: 6.5rem;
+    background-color: black;
+    color: white;
+    padding: 1rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 400;
+    display: inline-block;
+    background-size: 220%;
+    transition: all .2s;
+    backface-visibility: hidden; }
+    .section-amg .amg-discover:hover {
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+      background-position: 100%;
+      color: black;
+      font-weight: bold;
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25); }
+
+.ring-content {
+  display: flex;
+  justify-content: space-between; }
+  .ring-content-1 {
+    flex: 0 0 43%;
+    margin-right: 15rem;
+    margin-top: 20rem;
+    margin-bottom: 5rem;
+    width: 50%;
+    height: 40rem;
+    position: relative; }
+    @media only screen and (max-width: 56.25em) {
+      .ring-content-1 {
+        height: 25rem; } }
+    @media only screen and (max-width: 26.8em) {
+      .ring-content-1 {
+        margin-right: 10rem; } }
+    .ring-content-1__bg-video {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 3rem;
+      transition: all .3s; }
+      @media only screen and (max-width: 26.8em) {
+        .ring-content-1__bg-video {
+          margin-bottom: 2rem; } }
+    .ring-content-1__video {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      transition: all .2s; }
+      .ring-content-1__video:hover {
+        transform: scale(1.2);
+        padding-bottom: 5rem; }
+  .ring-content-2 {
+    flex: 1; }
+    .ring-content-2 img {
+      width: 100%;
+      height: auto;
+      transition: all .2s;
+      margin-bottom: 3rem; }
+      @media only screen and (max-width: 26.8em) {
+        .ring-content-2 img {
+          margin-bottom: 2rem; } }
+      .ring-content-2 img:hover {
+        transform: scale(1.2) translateX(4rem);
+        padding-bottom: 3rem;
+        padding-right: 2rem; }
+
+.smnr-content {
+  display: flex; }
+  .smnr-content-1 {
+    margin-right: 10rem; }
+  .smnr-content-2-figure {
+    position: relative;
+    text-align: center; }
+    .smnr-content-2-figure:hover .smnr-content-2-img {
+      filter: blur(1px); }
+    .smnr-content-2-figure:hover .smnr-content-2-text {
+      opacity: 1;
+      transform: translateY(-3rem) translateX(-50%); }
+  .smnr-content-2-img {
+    width: 90%;
+    height: auto; }
+  .smnr-content-2-text {
+    color: transparent;
+    background-image: linear-gradient(to right, black, darkcyan, black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8rem;
+    opacity: 0;
+    transition: all .3s ease-out; }
+
+.know-more {
+  width: 65%; }
+
+.eq-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/mercedes-benz-eqe-350-amg-line-edition-1-2022-5k-4961x2791-6460.jpeg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  z-index: 2;
+  transition: all .3s; }
+
+.eq-background-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/mercedes-benz-eqs-580-4matic-amg-line-edition-1-2021-5k-4961x2791-5225.jpeg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  z-index: 2;
+  transition: all .3s; }
+
+.eq-background-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/mercedes-benz-eqs-450-suv-amg-line-2022-5k-4961x2791-7918.jpeg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  z-index: 2;
+  transition: all .3s; }
+
+.follow-icon-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.follow-icon {
+  width: 3rem;
+  height: 3rem;
+  transition: all .3s; }
+  .follow-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.25); }
+
+.results {
+  background-image: linear-gradient(105deg, black 0%, black 50%, white 50%);
+  height: 5rem;
+  position: relative; }
+  .results-text {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.7rem;
+    text-transform: uppercase; }
+    .results-text-main-1 {
+      color: #240115;
+      font-weight: bold; }
+    .results-text-sub__link {
+      color: #000;
+      font-weight: bold; }
+
+.models-header {
+  position: relative; }
+
+.header-background {
+  height: 100vh;
+  width: 100%; }
+
+.models {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  transition: all .4s 1s; }
+  .models:hover .models-left {
+    flex: 0 0 42%; }
+  .models:hover .models-car {
+    display: block; }
+  .models:hover .s-class {
+    font-size: 2rem; }
+  .models:hover .s-class-main {
+    font-size: 4rem; }
+  .models:hover .models__btn {
+    display: inline-block; }
+  .models-left {
+    position: relative;
+    flex: 0 0 100%;
+    transition: all .2s;
+    backface-visibility: hidden; }
+  .models-transparent {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 55;
+    position: absolute; }
+  .models-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+    .models-bg-content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .models-list {
+    position: absolute;
+    top: 10rem;
+    right: 5rem;
+    z-index: 60;
+    list-style: none; }
+  .models-item:not(:last-child) {
+    margin-bottom: 3rem; }
+  .models-link:link, .models-link:visited {
+    text-decoration: none;
+    color: #777;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+    background-size: 222%;
+    transition: all .4s; }
+    .models-link:link:hover, .models-link:visited:hover {
+      background-position: 100%;
+      transform: translateX(1rem);
+      color: black; }
+  .models-car {
+    display: none;
+    flex: 1;
+    background-image: url(/img/brabus-600-mercedes-benz-s-class-black-cars-2022-5k-6000x4000-8730.jpeg);
+    background-size: cover;
+    background-position: center; }
+  .models-text {
+    position: absolute;
+    top: 20rem;
+    left: 10rem;
+    z-index: 10;
+    text-align: center;
+    width: 30%; }
