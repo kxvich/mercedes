@@ -701,8 +701,7 @@ body {
     transform: translateX(-50%);
 
     @media only screen and (max-width: 26.8em) {
-      z-index: 10000;
-    position: fixed; }
+      z-index: 10000; }
    }
   .header-nav__menu {
     font-size: 1.5rem;
@@ -721,6 +720,11 @@ body {
         width: 100%; } }
   .header-nav__checkbox:checked ~ .text-box {
     display: none; }
+
+  .header-nav__checkbox:checked ~ .header-nav__img{
+      position: fixed;
+  }
+
   .header-nav__checkbox:checked + .header-nav__button .header-nav__icon {
     background-image: linear-gradient(to right, transparent, transparent); }
   .header-nav__checkbox:checked + .header-nav__button .header-nav__icon::before {
