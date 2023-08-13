@@ -104,6 +104,10 @@ html {
 body {
   font-family: 'Rajdhani', sans-serif; }
 
+  a{
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
 .heading-primary {
   font-size: 7rem;
   color: white;
@@ -694,7 +698,8 @@ body {
     position: absolute;
     top: 3.5rem;
     left: 50%;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+   }
   .header-nav__menu {
     font-size: 1.5rem;
     text-transform: uppercase;
