@@ -740,7 +740,7 @@ body {
   .header-dealer {
     cursor: pointer;
     position: absolute;
-    top: 5rem;
+    top: 6rem;
     right: 3.5rem;
     animation: appear 1s; }
     .header-dealer__link {
@@ -753,8 +753,7 @@ body {
       align-items: center;
       transition: all .4s; }
       @media only screen and (max-width: 26.8em) {
-        .header-dealer__link {
-          display: none; } }
+        }
       .header-dealer__link:hover {
         color: #ccc; }
     .header-dealer__icon {
